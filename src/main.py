@@ -11,12 +11,23 @@ db, coll = connectCollection('companies_cb','companies_cb')
 
 companies = coll.find(
 {
-    'deadpooled_year': {
-        '$exists': True
-    }
-},
-{
-    'deadpooled_year': None
+    '$or': [
+        {
+            '$and': [
+                {
+                    'number_of_employees': None
+                }, {
+                    'funding_rounds.raised_amount': {
+                        '$gt': 250000
+                    }
+                }
+            ]
+        }, {
+            'number_of_employees': {
+                '$gt': 50
+            }
+        }
+    ]
 }
 )
 
