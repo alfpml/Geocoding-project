@@ -70,6 +70,7 @@ for c in range(len(companies2)):
 
 filtered={"idt":idt,"name":name, "category":category,"description":description,"latitude":latitude,"longitude":longitude,"year_founded":year_founded,"employees":employees}
 filtered_df=pd.DataFrame(filtered)
-print(len(filtered_df))
-print(filtered_df.head(10))
-filtered_df.to_csv("./output/filt_comp_coords.csv")
+filtered=filtered_df.dropna(subset = ['latitude','longitude'])
+print(len(filtered))
+print(filtered.head(10))
+filtered.to_csv("./output/filt_comp_coords.csv")
