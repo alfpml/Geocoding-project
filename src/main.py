@@ -8,6 +8,7 @@ def connectCollection(database, collection):
 
 db, coll = connectCollection('companies_cb','companies_cb')
 
+##find companies with more than 50 employees or having funding rounds
 
 companies = coll.find(
 {
@@ -16,16 +17,27 @@ companies = coll.find(
             '$and': [
                 {
                     'number_of_employees': None
-                }, {
+                },{
                     'funding_rounds.raised_amount': {
                         '$gt': 250000
                     }
+                },{
+                    'founded_year':{'$gte': 2003}
                 }
             ]
-        }, {
+        }, 
+        {
+            '$and': [
+        
+        
+        {
             'number_of_employees': {
                 '$gt': 50
+            }}
+        ,{
+            'founded_year':{'$gte': 2003}
             }
+        ]
         }
     ]
 }
