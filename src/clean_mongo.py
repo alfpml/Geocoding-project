@@ -45,8 +45,9 @@ companies = coll.find(
 )
 
 companies2=list(companies)
-print(len(companies2))
+##print(len(companies2))
 
+##Creating Data Frame at office level to further filter
 
 idt=[]
 name=[]
@@ -76,6 +77,8 @@ for c in range(len(companies2)):
 
 filtered={"idt":idt,"name":name, "category":category,"description":description,"city":city,"country":country,"latitude":latitude,"longitude":longitude,"year_founded":year_founded,"employees":employees,"total_money_raised":total_money_raised}
 filtered_df=pd.DataFrame(filtered)
+
+## Removing null/na values from capital fields (coorrds/city)
 filtered=filtered_df.dropna(subset = ['latitude','longitude'])
 filtered=filtered_df.dropna(subset = ['city'])
 filtered=filtered[filtered['city'].notnull()]
@@ -84,12 +87,29 @@ filtered=filtered[filtered['longitude'].notnull()]
 
 
 
-city_counts=filtered['city'].value_counts()
+##Filtering to US where most of the companies are and counting companies per city
+filtered['is_gaming']  = filtered.apply(lambda x: 1 if x.category=='games_video' else 0, axis=1)
+filtered['total_companies'] = filtered.groupby('city')['city'].transform('count')
 
-print(city_counts.head(30))
+filtered['gaming_companies'] = filtered.groupby('city').sum().is_gaming
+print(filtered.head(20))
+
+##Filtering out cities with high concentration of startup companies (over 50) and with too low (below 20) 
+filtered2=filtered[(filtered['total_companies']>20)&(filtered['total_companies']<=50)&(filtered['country']=="USA")]
+cities=filtered2['city'].value_counts()
+
+gaming_companies=filtered2[filtered2['category']=='games_video']
+cities_gaming=gaming_companies['city'].value_counts()
 
 
-print(len(filtered))
-print(filtered.head(10))
-filtered.to_csv("./output/filt_comp_coords.csv")
+print(len(filtered2))
+print(cities)
+print(cities_gaming)
+
+## ----> This already gives me 
+
+
+
+##print(filtered)
+##filtered2.to_csv("./output/filt_comp_coords.csv")
 
