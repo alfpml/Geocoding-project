@@ -11,5 +11,25 @@ def connectCollection(database, collection):
     return db, coll
 
 ##Function to calculate distance between two points
-def distance(coord_1,coord_2):
-return geopy.distance.vincenty(coords_1, coords_2).km
+def getLocCoord(office):
+    longitude = office['longitude']
+    latitude = office['latitude']
+    loc = {
+        'type':'Point',
+        'coordinates':[longitude, latitude]
+    }
+    return loc
+
+
+
+db, coll = connectCollection('companies_cb','offices')
+
+offices_2 = list(coll.find())
+
+for i in offices_2:
+    value = {"$set": {'location':getLocCoord(i)}}
+    coll.update_one(i, value)
+
+
+
+

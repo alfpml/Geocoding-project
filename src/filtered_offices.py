@@ -49,33 +49,23 @@ companies2=list(companies)
 
 ##Creating Data Frame at office level to further filter
 ##creating columns
-idt=[]
 name=[]
 category=[]
-description=[]
 city=[]
 country=[]
 latitude=[]
 longitude=[]
-year_founded=[]
-employees=[]
-total_money_raised=[]
 
 for c in range(len(companies2)):
     for office in range(len(companies2[c].get('offices',0))):
-        idt.append(companies2[c].get('_id',0))
         name.append(companies2[c].get('name',0))
         category.append(companies2[c].get('category_code',0))
-        description.append(companies2[c].get('description',0))
         city.append(companies2[c].get('offices',0)[office].get('city'))
         country.append(companies2[c].get('offices',0)[office].get('country_code'))
         latitude.append(companies2[c].get('offices',0)[office].get('latitude'))
         longitude.append(companies2[c].get('offices',0)[office].get('longitude'))
-        year_founded.append(companies2[c].get('founded_year',0))
-        employees.append(companies2[c].get('number_of_employees',0))
-        total_money_raised.append(companies2[c].get('total_money_raised',0))
 
-filtered={"idt":idt,"name":name, "category":category,"description":description,"city":city,"country":country,"latitude":latitude,"longitude":longitude,"year_founded":year_founded,"employees":employees,"total_money_raised":total_money_raised}
+filtered={"name":name, "category":category,"city":city,"country":country,"latitude":latitude,"longitude":longitude}
 filtered_df=pd.DataFrame(filtered)
 
 ## Removing null/na values from capital fields (coorrds/city)
@@ -111,6 +101,6 @@ offices=filtered2[(filtered2['city']=="Redwood City")|(filtered2['city']=="Bosto
 
 print(len(offices))
 
-offices.to_csv('filtered_offices.csv')
+offices.to_csv('./output/filtered_offices.csv')
 ##ffices.to_json(r'./output\offices.json')
 ##df.to_json(r'Path where you want to store the exported JSON file\File Name.json')

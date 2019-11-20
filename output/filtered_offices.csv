@@ -1,0 +1,86 @@
+,name,category,city,country,latitude,longitude,is_gaming,total_companies
+23,Thoof,web,Austin,USA,30.268735,-97.745209,0,36
+53,RockYou,games_video,Redwood City,USA,37.484619,-122.206893,1,23
+71,Carbonite,network_hosting,Boston,USA,42.350571,-71.076869,0,26
+83,oDesk,web,Redwood City,USA,37.479952,-122.178557,0,23
+86,Bazaarvoice,software,Austin,USA,30.407545,-97.717667,0,36
+132,obopay,mobile,Redwood City,USA,37.524729,-122.258037,0,23
+166,Cloudant,enterprise,Boston,USA,42.35892,-71.05781,0,26
+190,Pluck,web,Austin,USA,30.268735,-97.745209,0,36
+225,Spiceworks,hardware,Austin,USA,30.386601,-97.753739,0,36
+238,PubMatic,advertising,Redwood City,USA,37.446668,-122.156579,0,23
+250,Eons,network_hosting,Boston,USA,42.375219,-71.056101,0,26
+267,Gazelle,ecommerce,Boston,USA,42.354022,-71.140762,0,26
+274,YuMe,advertising,Redwood City,USA,37.476479,-122.221717,0,23
+324,Turn,advertising,Redwood City,USA,37.512253,-122.201099,0,23
+339,Springbox,web,Austin,USA,30.269452,-97.742682,0,36
+372,Yodle,advertising,Austin,USA,30.378658,-97.731249,0,36
+384,Intronis,enterprise,Boston,USA,42.351105,-71.049124,0,26
+412,Qik,mobile,Redwood City,USA,37.486368,-122.230116,0,23
+423,Challenge Games,network_hosting,Austin,USA,30.268236,-97.740651,0,36
+426,Bunchball,software,Redwood City,USA,37.3208403,-121.9479223,0,23
+466,Amobee,advertising,Redwood City,USA,37.52845,-122.263721,0,23
+467,Visible Measures,advertising,Boston,USA,42.3536303,-71.0590483,0,26
+474,BreakingPoint Systems,security,Austin,USA,30.384453,-97.709809,0,36
+495,TwoFish,ecommerce,Redwood City,USA,37.522281,-122.258139,0,23
+518,FameCast,games_video,Austin,USA,30.268735,-97.745209,1,36
+522,Evernote,software,Redwood City,USA,37.386774,-121.987661,0,23
+539,BillShrink,web,Redwood City,USA,37.503147,-122.211435,0,23
+599,Jivox,advertising,Redwood City,USA,37.555962,-122.288006,0,23
+649,itzbig,search,Austin,USA,30.387275,-97.759511,0,36
+657,Adlucent,software,Austin,USA,30.316226,-97.71813,0,36
+730,Retail Convergence,ecommerce,Boston,USA,42.35888,-71.05682,0,26
+781,FIRST ROI,advertising,Austin,USA,30.432421,-97.732059,0,36
+790,SimpleTuition,finance,Boston,USA,42.297418,-71.214796,0,26
+819,Moblyng,games_video,Redwood City,USA,37.453665,-122.229069,1,23
+823,CoverItLive,web,Austin,USA,43.6378576,-79.4255306,0,36
+877,Optaros,consulting,Boston,USA,42.356812,-71.058185,0,26
+903,Alereon,semiconductor,Austin,USA,30.375563,-97.78192,0,36
+931,Affinegy,software,Austin,USA,30.271891,-97.816472,0,36
+1031,Pricelock,cleantech,Redwood City,USA,37.518539,-122.254275,0,23
+1045,Hyper9,software,Austin,USA,30.387353,-97.753163,0,36
+1087,Jumptap,mobile,Boston,USA,42.368633,-71.075305,0,26
+1102,TRUECar,transportation,Austin,USA,30.3096936,-97.9390133,0,36
+1108,SailPoint Technologies,enterprise,Austin,USA,30.355703,-97.797117,0,36
+1129,Xactly Corp,analytics,Boston,USA,42.355077,-71.056928,0,26
+1132,Hangout Industries,games_video,Boston,USA,42.352835,-71.0609612,1,26
+1135,Hyper9,software,Austin,USA,30.387353,-97.753163,0,36
+1177,Jumptap,mobile,Boston,USA,42.368633,-71.075305,0,26
+1192,TRUECar,transportation,Austin,USA,30.3096936,-97.9390133,0,36
+1198,SailPoint Technologies,enterprise,Austin,USA,30.355703,-97.797117,0,36
+1219,Xactly Corp,analytics,Boston,USA,42.355077,-71.056928,0,26
+1222,Hangout Industries,games_video,Boston,USA,42.352835,-71.0609612,1,26
+1243,Heatwave Interactive,games_video,Austin,USA,30.297775,-97.762921,1,36
+1244,OneSpot,advertising,Austin,USA,30.2686147,-97.7404872,0,36
+1245,CoreTrace,security,Austin,USA,30.392018,-97.848345,0,36
+1355,One True Media,games_video,Redwood City,USA,37.485824,-122.212095,1,23
+1395,OwnerIQ,advertising,Boston,USA,42.3472851,-71.0499948,0,26
+1413,cFares,search,Redwood City,USA,37.5383063,-122.2523918,0,23
+1510,thoughtbot,consulting,Boston,USA,42.356161,-71.061649,0,26
+1626,UpSpring,web,Austin,USA,30.396276,-97.732769,0,36
+1658,NEXAGE,mobile,Boston,USA,37.4777028,-121.9250553,0,26
+1670,Luminary Micro,semiconductor,Austin,USA,30.306591,-97.826727,0,36
+1671,LucidWorks,analytics,Redwood City,USA,37.553121,-122.301534,0,23
+1688,WordStream,advertising,Boston,USA,42.354257,-71.056605,0,26
+1724,7 Billion People,software,Austin,USA,30.408322,-97.748077,0,36
+1743,EyeBuyDirect,ecommerce,Austin,USA,38.9825332,-77.093279,0,36
+1774,UnboundID,software,Austin,USA,30.498112,-97.777273,0,36
+1790,Relypsa,biotech,Redwood City,USA,37.5024749,-122.220408,0,23
+1815,Tatto Media,advertising,Boston,USA,42.3534915,-71.0564645,0,26
+1818,SCVNGR,games_video,Boston,USA,42.3406534,-71.0680027,1,26
+1838,qcue,software,Austin,USA,30.396989,-97.735768,0,36
+1864,Phurnace Software,software,Austin,USA,30.271393,-97.748623,0,36
+1932,SeeWhy,analytics,Boston,USA,42.675142,-71.1472132,0,26
+1956,VKernel Corporation,software,Boston,USA,42.3497366,-71.0491901,0,26
+1957,Shareaholic,web,Boston,USA,42.3647559,-71.1032591,0,26
+1959,Uplogix,enterprise,Austin,USA,30.3752527,-97.7815663,0,36
+1961,AllClear ID,security,Austin,USA,30.2708829,-97.7418001,0,36
+1975,First Coverage,software,Boston,USA,42.356931,-71.053991,0,26
+1991,Illumitex,hardware,Austin,USA,30.239294,-97.838813,0,36
+2118,uControl,software,Austin,USA,30.3542873,-97.7976572,0,36
+2160,Versartis,biotech,Redwood City,USA,37.523194,-122.259179,0,23
+2169,Virdia,cleantech,Redwood City,USA,37.523311,-122.259154,0,23
+2195,Buzzient,enterprise,Boston,USA,42.362856,-71.083762,0,26
+2250,Nuventix,cleantech,Austin,USA,30.239229,-97.834211,0,36
+2251,Pearl Therapeutics,biotech,Redwood City,USA,37.502169,-122.217727,0,23
+2277,Spiracur,medical,Redwood City,USA,37.4298335,-122.004179,0,23

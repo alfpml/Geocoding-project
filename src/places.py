@@ -11,14 +11,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ##Search places from coordinates
-def searchPlaces(query, location):
+def searchPlaces(query, location,radius):
     API_key = os.getenv('key')
     endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     places = []
     params = {
         'query': query,
         'location': location,
-        'radius': 0.25,
+        'radius': radius,
         'key': API_key
     }
     res = requests.get(endpoint_url, params = params)
