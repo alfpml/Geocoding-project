@@ -1,0 +1,86 @@
+,idt,name,category,description,city,country,latitude,longitude,year_founded,employees,total_money_raised,is_gaming,total_companies
+23,52cdef7c4bab8bd675297dae,Thoof,web,,Austin,USA,30.268735,-97.745209,2006,,$1M,0,36
+53,52cdef7c4bab8bd675297df0,RockYou,games_video,Social Gaming Company,Redwood City,USA,37.484619,-122.206893,2005,106.0,$136M,1,23
+71,52cdef7c4bab8bd675297e14,Carbonite,network_hosting,,Boston,USA,42.350571,-71.076869,2006,68.0,$66M,0,26
+83,52cdef7c4bab8bd675297e26,oDesk,web,Online workplace,Redwood City,USA,37.479952,-122.178557,2005,120.0,$44M,0,23
+86,52cdef7c4bab8bd675297e3c,Bazaarvoice,software,Word of mouth marketing,Austin,USA,30.407545,-97.717667,2005,600.0,$131M,0,36
+132,52cdef7c4bab8bd675297e86,obopay,mobile,Mobile payment solutions,Redwood City,USA,37.524729,-122.258037,2005,,$145M,0,23
+166,52cdef7c4bab8bd675297ee1,Cloudant,enterprise,NoSQL database managed service,Boston,USA,42.35892,-71.05781,2008,70.0,$18.3M,0,26
+190,52cdef7c4bab8bd675297f09,Pluck,web,White-label Social Network,Austin,USA,30.268735,-97.745209,2003,,$17M,0,36
+225,52cdef7c4bab8bd675297f69,Spiceworks,hardware,,Austin,USA,30.386601,-97.753739,2006,,$54M,0,36
+238,52cdef7c4bab8bd675297f9d,PubMatic,advertising,Sell-Side Platform,Redwood City,USA,37.446668,-122.156579,2006,380.0,$63M,0,23
+250,52cdef7c4bab8bd675297fc8,Eons,network_hosting,,Boston,USA,42.375219,-71.056101,2005,,$32M,0,26
+267,52cdef7c4bab8bd675298028,Gazelle,ecommerce,Consumer electronics trade-in site,Boston,USA,42.354022,-71.140762,2006,,$46.4M,0,26
+274,52cdef7c4bab8bd675298043,YuMe,advertising,Video Advertising,Redwood City,USA,37.476479,-122.221717,2004,,$72.9M,0,23
+324,52cdef7c4bab8bd6752980ba,Turn,advertising,Cloud Marketing Platform,Redwood City,USA,37.512253,-122.201099,2004,,$61.1M,0,23
+339,52cdef7c4bab8bd6752980d1,Springbox,web,Interactive Marketing Services Agency,Austin,USA,30.269452,-97.742682,2004,65.0,$0,0,36
+372,52cdef7c4bab8bd67529812e,Yodle,advertising,Online Marketing for Local Businesses,Austin,USA,30.378658,-97.731249,2005,1000.0,$40M,0,36
+384,52cdef7c4bab8bd675298142,Intronis,enterprise,Cloud backup services,Boston,USA,42.351105,-71.049124,2003,,$25.9M,0,26
+412,52cdef7c4bab8bd675298178,Qik,mobile,Live video casting from cell phones,Redwood City,USA,37.486368,-122.230116,2006,60.0,$14.8M,0,23
+423,52cdef7c4bab8bd675298193,Challenge Games,network_hosting,Online social games,Austin,USA,30.268236,-97.740651,2006,,$14.5M,0,36
+426,52cdef7c4bab8bd67529819d,Bunchball,software,Gamification,Redwood City,USA,37.3208403,-121.9479223,2005,60.0,$12.5M,0,23
+466,52cdef7c4bab8bd675298207,Amobee,advertising,Mobile Advertising Service ,Redwood City,USA,37.52845,-122.263721,2005,,$60M,0,23
+467,52cdef7c4bab8bd675298208,Visible Measures,advertising,Social video analytics & advertising,Boston,USA,42.3536303,-71.0590483,2005,,$90M,0,26
+474,52cdef7c4bab8bd675298238,BreakingPoint Systems,security,,Austin,USA,30.384453,-97.709809,2005,109.0,$20M,0,36
+495,52cdef7c4bab8bd6752982cf,TwoFish,ecommerce,managing microtransactions w/i games,Redwood City,USA,37.522281,-122.258139,2006,,$9.5M,0,23
+518,52cdef7c4bab8bd675298375,FameCast,games_video,online talent competition,Austin,USA,30.268735,-97.745209,2007,,$9.7M,1,36
+522,52cdef7c4bab8bd675298382,Evernote,software,Remember everything.,Redwood City,USA,37.386774,-121.987661,2004,280.0,$251M,0,23
+539,52cdef7c4bab8bd6752983cd,BillShrink,web,Product and service recomendations,Redwood City,USA,37.503147,-122.211435,2008,,$9M,0,23
+599,52cdef7c4bab8bd67529851b,Jivox,advertising,Interactive video advertising platform.,Redwood City,USA,37.555962,-122.288006,2007,60.0,$25.6M,0,23
+649,52cdef7c4bab8bd675298690,itzbig,search,,Austin,USA,30.387275,-97.759511,2006,,$4M,0,36
+657,52cdef7c4bab8bd6752986c1,Adlucent,software,,Austin,USA,30.316226,-97.71813,2005,85.0,$0,0,36
+730,52cdef7d4bab8bd6752988ec,Retail Convergence,ecommerce,Portfolio of ecommerce applications,Boston,USA,42.35888,-71.05682,2008,,$25M,0,26
+781,52cdef7d4bab8bd675298a30,FIRST ROI,advertising,emarketing for banks & credit unions,Austin,USA,30.432421,-97.732059,2006,100.0,$0,0,36
+790,52cdef7d4bab8bd675298a55,SimpleTuition,finance,Student loan search,Boston,USA,42.297418,-71.214796,2005,,$31M,0,26
+819,52cdef7d4bab8bd675298b52,Moblyng,games_video,HTML5 Social Games,Redwood City,USA,37.453665,-122.229069,2005,,$19.1M,1,23
+823,52cdef7d4bab8bd675298b76,CoverItLive,web,Liveblogging tool,Austin,USA,43.6378576,-79.4255306,2007,,$1M,0,36
+877,52cdef7d4bab8bd675298de3,Optaros,consulting,consulting and systems integration,Boston,USA,42.356812,-71.058185,2004,200.0,$38.5M,0,26
+903,52cdef7d4bab8bd675298f03,Alereon,semiconductor,Fabless Semiconductor Company,Austin,USA,30.375563,-97.78192,2003,75.0,$73M,0,36
+931,52cdef7d4bab8bd67529902d,Affinegy,software,,Austin,USA,30.271891,-97.816472,2003,,$550k,0,36
+1031,52cdef7d4bab8bd67529949e,Pricelock,cleantech,,Redwood City,USA,37.518539,-122.254275,2006,,$12M,0,23
+1045,52cdef7d4bab8bd675299534,Hyper9,software,Virtual Infrastructure Management,Austin,USA,30.387353,-97.753163,2006,,$15.2M,0,36
+1087,52cdef7d4bab8bd6752996ad,Jumptap,mobile,Mobile advertising solutions,Boston,USA,42.368633,-71.075305,2005,,$122M,0,26
+1102,52cdef7d4bab8bd67529973c,TRUECar,transportation,Car Buying Marketplace,Austin,USA,30.3096936,-97.9390133,2005,303.0,$352M,0,36
+1108,52cdef7d4bab8bd675299786,SailPoint Technologies,enterprise,identity governance software,Austin,USA,30.355703,-97.797117,2005,,$25.8M,0,36
+1129,52cdef7d4bab8bd67529984f,Xactly Corp,analytics,Incent Right.,Boston,USA,42.355077,-71.056928,2005,,$73.9M,0,26
+1132,52cdef7d4bab8bd675299853,Hangout Industries,games_video,,Boston,USA,42.352835,-71.0609612,2005,,$12M,1,26
+1135,52cdef7d4bab8bd6752998be,Hyper9,software,Virtual Infrastructure Management,Austin,USA,30.387353,-97.753163,2006,,$15.2M,0,36
+1177,52cdef7d4bab8bd675299a37,Jumptap,mobile,Mobile advertising solutions,Boston,USA,42.368633,-71.075305,2005,,$122M,0,26
+1192,52cdef7d4bab8bd675299ac6,TRUECar,transportation,Car Buying Marketplace,Austin,USA,30.3096936,-97.9390133,2005,303.0,$352M,0,36
+1198,52cdef7d4bab8bd675299b10,SailPoint Technologies,enterprise,identity governance software,Austin,USA,30.355703,-97.797117,2005,,$25.8M,0,36
+1219,52cdef7d4bab8bd675299bd9,Xactly Corp,analytics,Incent Right.,Boston,USA,42.355077,-71.056928,2005,,$73.9M,0,26
+1222,52cdef7d4bab8bd675299bdd,Hangout Industries,games_video,,Boston,USA,42.352835,-71.0609612,2005,,$12M,1,26
+1243,52cdef7d4bab8bd675299d68,Heatwave Interactive,games_video,,Austin,USA,30.297775,-97.762921,2008,,$12.6M,1,36
+1244,52cdef7d4bab8bd675299d6f,OneSpot,advertising,Content Advertising,Austin,USA,30.2686147,-97.7404872,2005,,$11.7M,0,36
+1245,52cdef7d4bab8bd675299d74,CoreTrace,security,Computer & Network Security,Austin,USA,30.392018,-97.848345,2007,,$16.9M,0,36
+1355,52cdef7e4bab8bd67529a315,One True Media,games_video,Online editing and sharing,Redwood City,USA,37.485824,-122.212095,2005,,$14M,1,23
+1395,52cdef7e4bab8bd67529a5c0,OwnerIQ,advertising,Path-to-purchase media,Boston,USA,42.3472851,-71.0499948,2006,,$28.3M,0,26
+1413,52cdef7e4bab8bd67529a6b6,cFares,search,Travel search engine,Redwood City,USA,37.5383063,-122.2523918,2005,,$13.6M,0,23
+1510,52cdef7e4bab8bd67529a996,thoughtbot,consulting,Software Consulting Company,Boston,USA,42.356161,-71.061649,2003,62.0,$0,0,26
+1626,52cdef7e4bab8bd67529ad35,UpSpring,web,Parent/child healthcare company,Austin,USA,30.396276,-97.732769,2005,,$2.6M,0,36
+1658,52cdef7e4bab8bd67529ae36,NEXAGE,mobile,Mobile Ad RTB Exchange,Boston,USA,37.4777028,-121.9250553,2006,60.0,$19.5M,0,26
+1670,52cdef7e4bab8bd67529ae93,Luminary Micro,semiconductor,ARM Cortex-M3-based microcontrollers,Austin,USA,30.306591,-97.826727,2004,,$44M,0,36
+1671,52cdef7e4bab8bd67529ae9d,LucidWorks,analytics,Apache Lucene/Solr Technologies,Redwood City,USA,37.553121,-122.301534,2007,,$32M,0,23
+1688,52cdef7e4bab8bd67529aef0,WordStream,advertising,PPC Management Software,Boston,USA,42.354257,-71.056605,2007,90.0,$16.3M,0,26
+1724,52cdef7e4bab8bd67529b02a,7 Billion People,software,Web personalization service,Austin,USA,30.408322,-97.748077,2006,,$6.53M,0,36
+1743,52cdef7e4bab8bd67529b10b,EyeBuyDirect,ecommerce,Prescription Eyewear,Austin,USA,38.9825332,-77.093279,2005,200.0,$0,0,36
+1774,52cdef7e4bab8bd67529b2ac,UnboundID,software,Identity management software,Austin,USA,30.498112,-97.777273,2007,,$14.5M,0,36
+1790,52cdef7e4bab8bd67529b355,Relypsa,biotech,,Redwood City,USA,37.5024749,-122.220408,2007,,$322M,0,23
+1815,52cdef7e4bab8bd67529b48a,Tatto Media,advertising,Behavioral Ad Network,Boston,USA,42.3534915,-71.0564645,2005,80.0,$0,0,26
+1818,52cdef7e4bab8bd67529b4ad,SCVNGR,games_video,"part game, part game platform",Boston,USA,42.3406534,-71.0680027,2008,60.0,$40.8M,1,26
+1838,52cdef7e4bab8bd67529b5d3,qcue,software,Dynamic Pricing Solutions,Austin,USA,30.396989,-97.735768,2007,,$1.13M,0,36
+1864,52cdef7e4bab8bd67529b6d9,Phurnace Software,software,Java EE configuration,Austin,USA,30.271393,-97.748623,2007,,$10M,0,36
+1932,52cdef7e4bab8bd67529b99e,SeeWhy,analytics,Website Coversion Enhancing Software,Boston,USA,42.675142,-71.1472132,2003,,$16M,0,26
+1956,52cdef7e4bab8bd67529babe,VKernel Corporation,software,virtualization management software,Boston,USA,42.3497366,-71.0491901,2007,,$7M,0,26
+1957,52cdef7e4bab8bd67529bac7,Shareaholic,web,content sharing and discovery platform,Boston,USA,42.3647559,-71.1032591,2009,,$5.46M,0,26
+1959,52cdef7e4bab8bd67529bace,Uplogix,enterprise,Remote management solution,Austin,USA,30.3752527,-97.7815663,2003,,$42.8M,0,36
+1961,52cdef7e4bab8bd67529bad2,AllClear ID,security,Alert Network,Austin,USA,30.2708829,-97.7418001,2004,,$9.3M,0,36
+1975,52cdef7e4bab8bd67529bb1a,First Coverage,software,Financial Services Software,Boston,USA,42.356931,-71.053991,2005,,$14M,0,26
+1991,52cdef7e4bab8bd67529bb8a,Illumitex,hardware,LED Technology Innovator,Austin,USA,30.239294,-97.838813,2005,,$54.4M,0,36
+2118,52cdef7f4bab8bd67529bece,uControl,software,"Home Security, Automation Platform",Austin,USA,30.3542873,-97.7976572,2006,,$3.9M,0,36
+2160,52cdef7f4bab8bd67529c037,Versartis,biotech,Therapeutics Protein Developer,Redwood City,USA,37.523194,-122.259179,2008,,$89.5M,0,23
+2169,52cdef7f4bab8bd67529c049,Virdia,cleantech,Cellulosic Biofuels Conversion,Redwood City,USA,37.523311,-122.259154,2007,,$111M,0,23
+2195,52cdef7f4bab8bd67529c0fb,Buzzient,enterprise,Enterprise Social Media Analytics,Boston,USA,42.362856,-71.083762,2007,,$1.57M,0,26
+2250,52cdef7f4bab8bd67529c27d,Nuventix,cleantech,Thermal management and cooling,Austin,USA,30.239229,-97.834211,2003,,$33.1M,0,36
+2251,52cdef7f4bab8bd67529c280,Pearl Therapeutics,biotech,Respiratory Disease research,Redwood City,USA,37.502169,-122.217727,2006,,$232M,0,23
+2277,52cdef7f4bab8bd67529c30b,Spiracur,medical,wound healing devices,Redwood City,USA,37.4298335,-122.004179,2007,,$55.3M,0,23

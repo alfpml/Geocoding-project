@@ -9,7 +9,7 @@ def connectCollection(database, collection):
 
 db, coll = connectCollection('companies_cb','companies_cb')
 
-##find companies with more than 50 employees or having funding rounds
+##find companies with more than 50 employees or having funding rounds with pymongo
 
 companies = coll.find(
 {
@@ -48,7 +48,7 @@ companies2=list(companies)
 ##print(len(companies2))
 
 ##Creating Data Frame at office level to further filter
-
+##creating columns
 idt=[]
 name=[]
 category=[]
@@ -85,8 +85,6 @@ filtered=filtered[filtered['city'].notnull()]
 filtered=filtered[filtered['latitude'].notnull()]
 filtered=filtered[filtered['longitude'].notnull()]
 
-
-
 ##Filtering to US where most of the companies are and counting companies per city
 filtered['is_gaming']  = filtered.apply(lambda x: 1 if x.category=='games_video' else 0, axis=1)
 filtered['total_companies'] = filtered.groupby('city')['city'].transform('count')
@@ -103,13 +101,16 @@ cities_gaming=gaming_companies['city'].value_counts()
 
 
 print(len(filtered2))
-print(cities)
+print(list(cities))
 print(cities_gaming)
 
-## ----> This already gives me 
+##selecting cities with at least two gaming companies
+offices=filtered2[(filtered2['city']=="Redwood City")|(filtered2['city']=="Boston")|(filtered2['city']=="Austin")]
 
 
 
-##print(filtered)
-##filtered2.to_csv("./output/filt_comp_coords.csv")
+print(len(offices))
 
+offices.to_csv('filtered_offices.csv')
+##ffices.to_json(r'./output\offices.json')
+##df.to_json(r'Path where you want to store the exported JSON file\File Name.json')
