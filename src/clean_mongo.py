@@ -91,7 +91,7 @@ filtered=filtered[filtered['longitude'].notnull()]
 filtered['is_gaming']  = filtered.apply(lambda x: 1 if x.category=='games_video' else 0, axis=1)
 filtered['total_companies'] = filtered.groupby('city')['city'].transform('count')
 
-filtered['gaming_companies'] = filtered.groupby('city').sum().is_gaming
+##filtered['gaming_companies'] = filtered.groupby('city').sum().is_gaming
 print(filtered.head(20))
 
 ##Filtering out cities with high concentration of startup companies (over 50) and with too low (below 20) 
