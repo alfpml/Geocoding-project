@@ -1,10 +1,12 @@
 from pymongo import MongoClient
 import pandas as pd
 import geopy.distance
-import functions as f
+import functions_search as fs
+import functions_rank as fr
+import functions_mongo as fm
 import filtered_offices as off
 
-db, coll = f.connectCollection('companies_cb','airports')
+db, coll = fm.connectCollection('companies_cb','airports')
 
 ##Creating a list of US airports with over 40 direct flights
 airports = coll.find(

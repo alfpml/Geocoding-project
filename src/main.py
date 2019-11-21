@@ -8,7 +8,9 @@ import json
 import time
 import pandas as pd
 import folium
-import functions as f
+import functions_search as fs
+import functions_rank as fr
+import functions_mongo as fm
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -25,7 +27,7 @@ def main():
     dist_airport=[]
     for x in range(len(offices)):
         office=offices.iloc[x]
-        dist_airport.append(f.closest_airport(office,airports))
+        dist_airport.append(fs.closest_airport(office,airports))
 
         ## appending dist_airport to office df
     offices['dist_airport'] = dist_airport 
@@ -34,7 +36,7 @@ def main():
     dist_starbucks=[]
     for x in range(len(offices)):
         office=offices.iloc[x]
-        dist_starbucks.append(f.closest_starbucks(office))
+        dist_starbucks.append(fs.closest_starbucks(office))
 
     offices['dist_starbucks'] = dist_starbucks
 
@@ -42,7 +44,7 @@ def main():
     dist_vegan=[]
     for x in range(len(offices)):
         office=offices.iloc[x]
-        dist_vegan.append(closest_gtype(office,"vegan",500,"restaurant"))
+        dist_vegan.append(fs.closest_gtype(office,"vegan",500,"restaurant"))
 
     offices['dist_vegan'] = dist_vegan
 
@@ -50,29 +52,16 @@ def main():
     dist_school=[]
     for x in range(len(offices)):
         office=offices.iloc[x]
-        dist_school.append(closest_gtype(office,"waldorf",10000,"school"))
+        dist_school.append(fs.closest_gtype(office,"waldorf",10000,"school"))
 
     offices['dist_school'] = dist_school
 
 
     ## 6. Building Rank
-
-    def rank(row):
-        if row['dist_airport']==1:
-            return 'Hispanic'
-        if row['dist_starbucks']
-            return 'Two Or More'
-        if row['dist_airport']==1:
-            return 'A/I AK Native'
-        if row['eri_asian']==1:
-            return 'Asian'
-        if row['eri_afr_amer']==1:
-            return 'Black/AA'
-        if row['eri_hawaiian']== 1:
-            return 'Haw/Pac Isl.'
-        if row['eri_white']==1:
-            return 'White'
-        return 'Other'
+    offices['rank'] = offices.apply (lambda row: fr.rank_airport(row), axis=1) + offices.apply (lambda row: fr.rank_starbucks(row), axis=1) + offices.apply (lambda row: fr.rank_vegan(row), axis=1) + offices.apply (lambda row: fr.rank_schools(row), axis=1)
+    offices=offices.sort_values('rank',ascending=False)
+    
+    print(offices.iloc[0])
 
 if __name__ == "__main__":
     main()

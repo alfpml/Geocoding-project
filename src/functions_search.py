@@ -11,13 +11,6 @@ import geopy.distance
 from dotenv import load_dotenv
 load_dotenv()
 
-##function to connect to MOngoDB
-def connectCollection(database, collection):
-    client = MongoClient()
-    db = client[database]
-    coll = db[collection]
-    return db, coll
-
 ##Function to calculate distance between two points
 def getLocCoord(office):
     longitude = office['longitude']

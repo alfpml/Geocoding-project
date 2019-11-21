@@ -1,14 +1,10 @@
 from pymongo import MongoClient
 import pandas as pd
-import functions as f
+import functions_search as fs
+import functions_rank as fr
+import functions_mongo as fm
 
-def connectCollection(database, collection):
-    client = MongoClient()
-    db = client[database]
-    coll = db[collection]
-    return db, coll
-
-db, coll = connectCollection('companies_cb','companies_cb')
+db, coll = fm.connectCollection('companies_cb','companies_cb')
 
 ##find companies with more than 50 employees or having funding rounds with pymongo
 
