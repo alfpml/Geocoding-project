@@ -15,13 +15,11 @@ load_dotenv()
 import functions as f
 import filtered_offices as off
 
-starbucks1 = f.nearbysearchName('starbucks','30.268735,-97.745209',250)
-strb_df=pd.DataFrame(f.getLocation(starbucks1))
 
-print(strb_df)
-print(strb_df.iloc[0])
-print(type(strb_df.iloc[0]))
+db, coll = f.connectCollection('companies_cb','offices')
 
-##starbucks_df.to_csv('starbucks.csv')
-##starbucks1.to_csv('./output/starbucks.csv')
+offices_2 = list(coll.find())
 
+for i in offices_2:
+    value = {"$set": {'location':f.getLocCoord(i)}}
+    coll.update_one(i, value)

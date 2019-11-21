@@ -1,51 +1,51 @@
-,_id,code,lat,lon,name,city,state,country,woeid,icao,direct_flights,carriers
-3,5dd41898f8ad2f4f1bf76feb,ABQ,35.0494,-106.625,Albuquerque International Airport,Albuquerque,New Mexico,United States,12518564,KABQ,41,25
-29,5dd41898f8ad2f4f1bf77058,ANC,61.1767,-149.961,Anchorage International Airport,Anchorage,Alaska,United States,12518613,PANC,62,47
-41,5dd41898f8ad2f4f1bf77095,ATL,33.6558,-84.4333,Hartsfield-Jackson Atlanta International Airport,Atlanta,Georgia,United States,12522118,KATL,253,60
-47,5dd41898f8ad2f4f1bf770a4,AUS,30.2027,-97.6653,Austin-Bergstrom International Airport,Austin,Texas,United States,23418445,KAUS,50,37
-52,5dd41898f8ad2f4f1bf770d8,BDL,41.9271,-72.6816,Bradley International Airport,Windsor Locks,Connecticut,United States,12518915,KBDL,41,31
-71,5dd41898f8ad2f4f1bf7713e,BNA,36.1342,-86.6682,Nashville International Airport,Nashville,Tennessee,United States,12521083,KBNA,53,38
-73,5dd41898f8ad2f4f1bf77152,BOS,42.3717,-71.0281,Gen E L Logan International Airport,Boston,Massachusetts,United States,12519874,KBOS,113,68
-90,5dd41898f8ad2f4f1bf7719c,BWI,39.1841,-76.6745,Baltimore-Washington International Thurgood Mars,Baltimore,Maryland,United States,12522341,KBWI,79,39
-114,5dd41898f8ad2f4f1bf77212,CLE,41.4115,-81.8339,Hopkins International Airport,Cleveland,Ohio,United States,12520226,KCLE,102,44
-117,5dd41898f8ad2f4f1bf77219,CLT,35.2226,-80.946,Douglas International Airport,Charlotte,North Carolina,United States,12519519,KCLT,133,39
-119,5dd41898f8ad2f4f1bf77222,CMH,39.9974,-82.8877,Port Columbus International Airport,Columbus,Ohio,United States,12521441,KCMH,41,35
-132,5dd41898f8ad2f4f1bf77266,CVG,39.0571,-84.6625,Greater Cincinnati International Airport,Hebron,Ohio,United States,12519978,KCVG,115,39
-141,5dd41898f8ad2f4f1bf77296,DCA,38.849,-77.0438,Washington National Airport,Arlington,Virginia,United States,12522343,KDCA,77,42
-144,5dd41898f8ad2f4f1bf7729d,DFW,32.9222,-97.0409,Fort Worth International Airport,Dallas,Texas,United States,12519786,KDFW,179,62
-151,5dd41898f8ad2f4f1bf772d7,DEN,39.8396,-104.672,Denver International Airport,Denver,Colorado,United States,12523052,KDEN,162,57
-154,5dd41898f8ad2f4f1bf772db,DTW,42.2327,-83.3412,Detroit Metropolitan Wayne County Airport,Detroit,Michigan,United States,12519481,KDTW,161,45
-182,5dd41898f8ad2f4f1bf7734d,EWR,40.6924,-74.1843,Newark International Airport,Newark,New Jersey,United States,12521127,KEWR,220,64
-191,5dd41898f8ad2f4f1bf7736f,FLL,26.0722,-80.1354,Fort Lauderdale Hollywood International Airport,Dania Beach,Florida,United States,12519836,KFLL,108,46
-234,5dd41898f8ad2f4f1bf7746a,HNL,21.3358,-157.919,Honolulu International Airport,Honolulu,Hawaii,United States,12520216,PHNL,43,36
-254,5dd41898f8ad2f4f1bf774a7,IAH,29.9784,-95.3424,George Bush Intercontinental Airport,Houston,Texas,United States,12520245,KIAH,210,54
-255,5dd41898f8ad2f4f1bf774a8,IAD,38.9556,-77.4484,Dulles International Airport,Washington,Virginia,United States,12519544,KIAD,150,63
-264,5dd41898f8ad2f4f1bf774ca,ILN,39.4348,-83.7982,Airborne Airpark,Wilmington,Ohio,United States,12518539,KILN,71,4
-266,5dd41898f8ad2f4f1bf774d6,IND,39.7322,-86.2707,Indianapolis International Airport,Indianapolis,Indiana,United States,12520294,KIND,46,39
-283,5dd41898f8ad2f4f1bf77525,JFK,40.6437,-73.79,John F Kennedy International Airport,Jamaica,New York,United States,12520380,KJFK,233,100
-333,5dd41898f8ad2f4f1bf7764a,LAS,36.0806,-115.143,Mccarran International Airport,Las Vegas,Nevada,United States,12520849,KLAS,130,64
-334,5dd41898f8ad2f4f1bf7764b,LAX,33.9456,-118.391,Los Angeles International Airport,Los Angeles,California,United States,12520706,KLAX,200,99
-345,5dd41898f8ad2f4f1bf77677,LGA,40.7731,-73.8756,LaGuardia Airport,Flushing,New York,United States,12520509,KLGA,82,30
-369,5dd41898f8ad2f4f1bf77717,MCI,39.2992,-94.7171,Kansas City International Airport,Kansas City,Missouri,United States,12520420,KMCI,64,41
-372,5dd41898f8ad2f4f1bf7771c,MCO,28.4418,-81.3115,Orlando International Airport,Orlando,Florida,United States,12521243,KMCO,106,63
-375,5dd41898f8ad2f4f1bf7772d,MDW,41.7875,-87.7416,Chicago Midway International Airport,Chicago,Illinois,United States,12519178,KMDW,55,8
-377,5dd41898f8ad2f4f1bf7773a,MEM,35.047,-89.9823,Memphis International Airport,Memphis,Tennessee,United States,12520895,KMEM,96,28
-384,5dd41898f8ad2f4f1bf77753,MIA,25.7953,-80.2727,Miami International Airport,Miami,Florida,United States,12520923,KMIA,167,91
-386,5dd41898f8ad2f4f1bf77766,MKE,42.9471,-87.9051,General Mitchell International Airport,Milwaukee,Wisconsin,United States,12519880,KMKE,59,30
-403,5dd41898f8ad2f4f1bf777b3,MSP,44.8793,-93.1987,Minneapolis St Paul International Airport,St. Paul,Minnesota,United States,12520966,KMSP,171,41
-405,5dd41898f8ad2f4f1bf777ba,MSY,29.983,-90.2569,New Orleans International Airport,Kenner,Louisiana,United States,12521116,KMSY,41,44
-438,5dd41898f8ad2f4f1bf7789e,ORD,41.9796,-87.8825,Chicago O'Hare International Airport,Chicago,Illinois,United States,12521200,KORD,222,85
-448,5dd41898f8ad2f4f1bf778e0,PDX,45.5867,-122.587,Portland International Airport,Portland,Oregon,United States,12521453,KPDX,74,43
-456,5dd41898f8ad2f4f1bf778ff,PHL,39.8768,-75.2419,Philadelphia International Airport,Philadelphia,Pennsylvania,United States,12521360,KPHL,133,51
-458,5dd41898f8ad2f4f1bf77903,PHX,33.4376,-112.03,Sky Harbor International Airport,Phoenix,Arizona,United States,12521872,KPHX,108,51
-465,5dd41898f8ad2f4f1bf7790e,PIT,40.4914,-80.2328,Pittsburgh International Airport,Coraopolis,Pennsylvania,United States,12519983,KPIT,45,50
-499,5dd41898f8ad2f4f1bf779c5,RDU,35.8729,-78.7923,Durham International Airport,Raleigh/Durham,North Carolina,United States,12519551,KRDU,47,44
-517,5dd41898f8ad2f4f1bf77a2b,SAN,32.7299,-117.195,San Diego International Airport,San Diego,California,United States,12520660,KSAN,51,57
-521,5dd41898f8ad2f4f1bf77a35,SAT,29.5252,-98.4729,San Antonio International Airport,San Antonio,Texas,United States,12521716,KSAT,44,34
-530,5dd41898f8ad2f4f1bf77a5c,SEA,47.4405,-122.296,Tacoma International Airport,Seattle,Washington,United States,12522066,KSEA,109,59
-532,5dd41898f8ad2f4f1bf77a67,SFO,37.6148,-122.392,San Francisco International Airport,San Francisco,California,United States,12521721,KSFO,147,76
-546,5dd41898f8ad2f4f1bf77a91,SJU,18.4367,-66.0095,Luis Munoz Marin Airport,Carolina,Puerto Rico,United States,23388351,TJSJ,60,37
-549,5dd41898f8ad2f4f1bf77aa5,SLC,40.7862,-111.982,Salt Lake City International Airport,Salt Lake City,Utah,United States,12521709,KSLC,104,38
-568,5dd41898f8ad2f4f1bf77af1,STL,38.7414,-90.3647,Lambert St Louis International Airport,St. Louis,Missouri,United States,12520553,KSTL,78,46
-594,5dd41898f8ad2f4f1bf77bae,TOL,41.5923,-83.8072,Toledo Express Airport,Swanton,Ohio,United States,12522152,KTOL,56,17
-595,5dd41898f8ad2f4f1bf77bb4,TPA,27.9744,-82.5356,Tampa International Airport,Tampa,Florida,United States,12522077,KTPA,74,48
+,code,lat,lon,name,city,state,country,woeid,icao,direct_flights,carriers
+0,ABQ,35.0494,-106.625,Albuquerque International Airport,Albuquerque,New Mexico,United States,12518564,KABQ,41,25
+1,ANC,61.1767,-149.961,Anchorage International Airport,Anchorage,Alaska,United States,12518613,PANC,62,47
+2,ATL,33.6558,-84.4333,Hartsfield-Jackson Atlanta International Airport,Atlanta,Georgia,United States,12522118,KATL,253,60
+3,AUS,30.2027,-97.6653,Austin-Bergstrom International Airport,Austin,Texas,United States,23418445,KAUS,50,37
+4,BDL,41.9271,-72.6816,Bradley International Airport,Windsor Locks,Connecticut,United States,12518915,KBDL,41,31
+5,BNA,36.1342,-86.6682,Nashville International Airport,Nashville,Tennessee,United States,12521083,KBNA,53,38
+6,BOS,42.3717,-71.0281,Gen E L Logan International Airport,Boston,Massachusetts,United States,12519874,KBOS,113,68
+7,BWI,39.1841,-76.6745,Baltimore-Washington International Thurgood Mars,Baltimore,Maryland,United States,12522341,KBWI,79,39
+8,CLE,41.4115,-81.8339,Hopkins International Airport,Cleveland,Ohio,United States,12520226,KCLE,102,44
+9,CLT,35.2226,-80.946,Douglas International Airport,Charlotte,North Carolina,United States,12519519,KCLT,133,39
+10,CMH,39.9974,-82.8877,Port Columbus International Airport,Columbus,Ohio,United States,12521441,KCMH,41,35
+11,CVG,39.0571,-84.6625,Greater Cincinnati International Airport,Hebron,Ohio,United States,12519978,KCVG,115,39
+12,DCA,38.849,-77.0438,Washington National Airport,Arlington,Virginia,United States,12522343,KDCA,77,42
+13,DFW,32.9222,-97.0409,Fort Worth International Airport,Dallas,Texas,United States,12519786,KDFW,179,62
+14,DEN,39.8396,-104.672,Denver International Airport,Denver,Colorado,United States,12523052,KDEN,162,57
+15,DTW,42.2327,-83.3412,Detroit Metropolitan Wayne County Airport,Detroit,Michigan,United States,12519481,KDTW,161,45
+16,EWR,40.6924,-74.1843,Newark International Airport,Newark,New Jersey,United States,12521127,KEWR,220,64
+17,FLL,26.0722,-80.1354,Fort Lauderdale Hollywood International Airport,Dania Beach,Florida,United States,12519836,KFLL,108,46
+18,HNL,21.3358,-157.919,Honolulu International Airport,Honolulu,Hawaii,United States,12520216,PHNL,43,36
+19,IAH,29.9784,-95.3424,George Bush Intercontinental Airport,Houston,Texas,United States,12520245,KIAH,210,54
+20,IAD,38.9556,-77.4484,Dulles International Airport,Washington,Virginia,United States,12519544,KIAD,150,63
+21,ILN,39.4348,-83.7982,Airborne Airpark,Wilmington,Ohio,United States,12518539,KILN,71,4
+22,IND,39.7322,-86.2707,Indianapolis International Airport,Indianapolis,Indiana,United States,12520294,KIND,46,39
+23,JFK,40.6437,-73.79,John F Kennedy International Airport,Jamaica,New York,United States,12520380,KJFK,233,100
+24,LAS,36.0806,-115.143,Mccarran International Airport,Las Vegas,Nevada,United States,12520849,KLAS,130,64
+25,LAX,33.9456,-118.391,Los Angeles International Airport,Los Angeles,California,United States,12520706,KLAX,200,99
+26,LGA,40.7731,-73.8756,LaGuardia Airport,Flushing,New York,United States,12520509,KLGA,82,30
+27,MCI,39.2992,-94.7171,Kansas City International Airport,Kansas City,Missouri,United States,12520420,KMCI,64,41
+28,MCO,28.4418,-81.3115,Orlando International Airport,Orlando,Florida,United States,12521243,KMCO,106,63
+29,MDW,41.7875,-87.7416,Chicago Midway International Airport,Chicago,Illinois,United States,12519178,KMDW,55,8
+30,MEM,35.047,-89.9823,Memphis International Airport,Memphis,Tennessee,United States,12520895,KMEM,96,28
+31,MIA,25.7953,-80.2727,Miami International Airport,Miami,Florida,United States,12520923,KMIA,167,91
+32,MKE,42.9471,-87.9051,General Mitchell International Airport,Milwaukee,Wisconsin,United States,12519880,KMKE,59,30
+33,MSP,44.8793,-93.1987,Minneapolis St Paul International Airport,St. Paul,Minnesota,United States,12520966,KMSP,171,41
+34,MSY,29.983,-90.2569,New Orleans International Airport,Kenner,Louisiana,United States,12521116,KMSY,41,44
+35,ORD,41.9796,-87.8825,Chicago O'Hare International Airport,Chicago,Illinois,United States,12521200,KORD,222,85
+36,PDX,45.5867,-122.587,Portland International Airport,Portland,Oregon,United States,12521453,KPDX,74,43
+37,PHL,39.8768,-75.2419,Philadelphia International Airport,Philadelphia,Pennsylvania,United States,12521360,KPHL,133,51
+38,PHX,33.4376,-112.03,Sky Harbor International Airport,Phoenix,Arizona,United States,12521872,KPHX,108,51
+39,PIT,40.4914,-80.2328,Pittsburgh International Airport,Coraopolis,Pennsylvania,United States,12519983,KPIT,45,50
+40,RDU,35.8729,-78.7923,Durham International Airport,Raleigh/Durham,North Carolina,United States,12519551,KRDU,47,44
+41,SAN,32.7299,-117.195,San Diego International Airport,San Diego,California,United States,12520660,KSAN,51,57
+42,SAT,29.5252,-98.4729,San Antonio International Airport,San Antonio,Texas,United States,12521716,KSAT,44,34
+43,SEA,47.4405,-122.296,Tacoma International Airport,Seattle,Washington,United States,12522066,KSEA,109,59
+44,SFO,37.6148,-122.392,San Francisco International Airport,San Francisco,California,United States,12521721,KSFO,147,76
+45,SJU,18.4367,-66.0095,Luis Munoz Marin Airport,Carolina,Puerto Rico,United States,23388351,TJSJ,60,37
+46,SLC,40.7862,-111.982,Salt Lake City International Airport,Salt Lake City,Utah,United States,12521709,KSLC,104,38
+47,STL,38.7414,-90.3647,Lambert St Louis International Airport,St. Louis,Missouri,United States,12520553,KSTL,78,46
+48,TOL,41.5923,-83.8072,Toledo Express Airport,Swanton,Ohio,United States,12522152,KTOL,56,17
+49,TPA,27.9744,-82.5356,Tampa International Airport,Tampa,Florida,United States,12522077,KTPA,74,48

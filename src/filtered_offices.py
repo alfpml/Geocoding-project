@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import pandas as pd
+import functions as f
 
 def connectCollection(database, collection):
     client = MongoClient()
@@ -80,7 +81,7 @@ filtered['is_gaming']  = filtered.apply(lambda x: 1 if x.category=='games_video'
 filtered['total_companies'] = filtered.groupby('city')['city'].transform('count')
 
 ##filtered['gaming_companies'] = filtered.groupby('city').sum().is_gaming
-print(filtered.head(20))
+##print(filtered.head(20))
 
 ##Filtering out cities with high concentration of startup companies (over 50) and with too low (below 20) 
 filtered2=filtered[(filtered['total_companies']>20)&(filtered['total_companies']<=50)&(filtered['country']=="USA")]
@@ -96,11 +97,9 @@ print(len(filtered2))
 
 ##selecting cities with at least two gaming companies
 offices=filtered2[(filtered2['city']=="Redwood City")|(filtered2['city']=="Boston")|(filtered2['city']=="Austin")]
-
+offices.reset_index(drop=True, inplace=True)
 
 
 print(len(offices))
 
 offices.to_csv('./output/filtered_offices.csv')
-##ffices.to_json(r'./output\offices.json')
-##df.to_json(r'Path where you want to store the exported JSON file\File Name.json')

@@ -7,6 +7,7 @@ import json
 import time
 import pandas as pd
 import folium
+import geopy.distance
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -76,3 +77,23 @@ def getLocation(result):
         }
         location.append(loc)
     return location
+
+##Function to find closest airport
+def closest_airport(office,df):
+    coords_off = (office.get('latitude'),office.get('longitude'))
+    dist = []
+    for i in range(len(df)):
+        coords_air = (df.iloc[i].get('lat'),df.iloc[i].get('lon'))
+        dist.append(geopy.distance.geodesic(coords_off, coords_air).km)
+    return min(dist)
+
+
+##Function to find closest starbucks
+def closest_starbucks(office):
+    coords_off = (office.get('latitude'),office.get('longitude'))
+    coords_off2 = ("{},{}".format(coords_off[0],coords_off[1]))
+    starbucks=pd.DataFrame(getLocation(nearbysearchName("starbucks",coords_off2,1000))).iloc[0]
+    coords_str=(starbucks.get('latitude'),starbucks.get('longitude'))
+    dist = []
+    dist.append(geopy.distance.geodesic(coords_off, coords_str).m)
+    return dist
