@@ -46,6 +46,33 @@ def main():
 
     offices['dist_vegan'] = dist_vegan
 
+    ## 5. Distance to Closest Waldorf school
+    dist_school=[]
+    for x in range(len(offices)):
+        office=offices.iloc[x]
+        dist_school.append(closest_gtype(office,"waldorf",10000,"school"))
+
+    offices['dist_school'] = dist_school
+
+
+    ## 6. Building Rank
+
+    def rank(row):
+        if row['dist_airport']==1:
+            return 'Hispanic'
+        if row['dist_starbucks']
+            return 'Two Or More'
+        if row['dist_airport']==1:
+            return 'A/I AK Native'
+        if row['eri_asian']==1:
+            return 'Asian'
+        if row['eri_afr_amer']==1:
+            return 'Black/AA'
+        if row['eri_hawaiian']== 1:
+            return 'Haw/Pac Isl.'
+        if row['eri_white']==1:
+            return 'White'
+        return 'Other'
 
 if __name__ == "__main__":
     main()

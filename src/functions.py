@@ -93,30 +93,30 @@ def closest_airport(office,df):
 def closest_starbucks(office):
     coords_off = (office.get('latitude'),office.get('longitude'))
     coords_off2 = ("{},{}".format(coords_off[0],coords_off[1]))
-    nbs_list=nearbysearchName("starbucks",coords_off2,500)
+    nbs_list=nearbysearchName("starbucks",coords_off2,1000)
     dist = []
     a=0
     if nbs_list==[]:
-        return dist.append(a)
+        dist.append(a)
     else:
         starbucks=pd.DataFrame(getLocation(nbs_list)).iloc[0]
         coords_str=(starbucks.get('latitude'),starbucks.get('longitude'))
         geo_dist=(geopy.distance.geodesic(coords_off, coords_str).m)
         dist.append(geo_dist)
-        return dist
+        return dist[0]
 
 ##Function to find closest vegan
 def closest_gtype(office,query,radius,gtype):
     coords_off = (office.get('latitude'),office.get('longitude'))
     coords_off2 = ("{},{}".format(coords_off[0],coords_off[1]))
-    nbs_list=nearbysearchText(query,coords_off2,radius,gtype)
+    nbs_list=nearbysearchType(query,coords_off2,radius,gtype)
     dist = []
     a=0
     if nbs_list==[]:
-        return dist.append(a)
+        dist.append(a)
     else:
         df=pd.DataFrame(getLocation(nbs_list)).iloc[0]
         coords_df=(df.get('latitude'),df.get('longitude'))
         geo_dist=(geopy.distance.geodesic(coords_off, coords_df).m)
         dist.append(geo_dist)
-        return dist
+    return dist[0]
