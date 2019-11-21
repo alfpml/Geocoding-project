@@ -31,6 +31,12 @@ def main():
     offices['dist_airport'] = dist_airport 
 
     ## 3. Distance to Closest Starbucks
+    dist_starbucks=[]
+    for x in range(len(offices)):
+    office=offices.iloc[x]
+    dist_starbucks.append(closest_starbucks(office))
+
+    offices['dist_starbucks'] = dist_starbucks 
 
 if __name__ == "__main__":
     main()
