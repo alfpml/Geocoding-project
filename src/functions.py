@@ -10,28 +10,55 @@ import folium
 from dotenv import load_dotenv
 load_dotenv()
 
+##function to connect to MOngoDB
+def connectCollection(database, collection):
+    client = MongoClient()
+    db = client[database]
+    coll = db[collection]
+    return db, coll
+
+##Function to calculate distance between two points
+def getLocCoord(office):
+    longitude = office['longitude']
+    latitude = office['latitude']
+    loc = {
+        'type':'Point',
+        'coordinates':[longitude, latitude]
+    }
+    return loc
+
 ##Search places from coordinates
-def searchPlaces(query, location,radius):
+def nearbysearchName(query,location,radius):
     API_key = os.getenv('key')
-    endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    endpoint_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     places = []
     params = {
-        'query': query,
+        'rankbydistance':"",
         'location': location,
         'radius': radius,
+        'name': query,
         'key': API_key
     }
     res = requests.get(endpoint_url, params = params)
     results =  json.loads(res.content)
     places.extend(results['results'])
-    time.sleep(2)
-    while "next_page_token" in results:
-        params['pagetoken'] = results['next_page_token'],
-        res = requests.get(endpoint_url, params = params)
-        results = json.loads(res.content)
-        places.extend(results['results'])
-        time.sleep(2)
     return places
+
+def nearbysearchText(query,location,radius):
+    API_key = os.getenv('key')
+    endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    places = []
+    params = {
+        'location': location,
+        'radius': radius,
+        'query': query,
+        'key': API_key
+    }
+    res = requests.get(endpoint_url, params = params)
+    results =  json.loads(res.content)
+    places.extend(results['results'])
+    return places
+
 
 ## get location from places
 def getLocation(result):
@@ -40,7 +67,7 @@ def getLocation(result):
         latitude = result[i]['geometry']['location']['lat']
         longitude = result[i]['geometry']['location']['lng']
         name = result[i]['name']
-        address = result[i]['formatted_address']
+        address = result[i]['vicinity']
         loc = {
             'name': name,
             'address': address,

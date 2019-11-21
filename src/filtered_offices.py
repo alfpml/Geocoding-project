@@ -91,8 +91,8 @@ cities_gaming=gaming_companies['city'].value_counts()
 
 
 print(len(filtered2))
-print(list(cities))
-print(cities_gaming)
+##print(list(cities))
+##print(cities_gaming)
 
 ##selecting cities with at least two gaming companies
 offices=filtered2[(filtered2['city']=="Redwood City")|(filtered2['city']=="Boston")|(filtered2['city']=="Austin")]
