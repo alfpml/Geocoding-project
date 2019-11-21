@@ -33,10 +33,19 @@ def main():
     ## 3. Distance to Closest Starbucks
     dist_starbucks=[]
     for x in range(len(offices)):
-    office=offices.iloc[x]
-    dist_starbucks.append(closest_starbucks(office))
+        office=offices.iloc[x]
+        dist_starbucks.append(f.closest_starbucks(office))
 
-    offices['dist_starbucks'] = dist_starbucks 
+    offices['dist_starbucks'] = dist_starbucks
+
+    ## 4. Distance to Closest Vegan Restaurant
+    dist_vegan=[]
+    for x in range(len(offices)):
+        office=offices.iloc[x]
+        dist_vegan.append(closest_gtype(office,"vegan",500,"restaurant"))
+
+    offices['dist_vegan'] = dist_vegan
+
 
 if __name__ == "__main__":
     main()

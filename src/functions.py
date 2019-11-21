@@ -45,21 +45,22 @@ def nearbysearchName(query,location,radius):
     places.extend(results['results'])
     return places
 
-def nearbysearchText(query,location,radius):
+def nearbysearchType(query,location,radius,gtype):
     API_key = os.getenv('key')
-    endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    endpoint_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     places = []
     params = {
+        'rankbydistance':"",
         'location': location,
         'radius': radius,
         'query': query,
+        'type':gtype,
         'key': API_key
     }
     res = requests.get(endpoint_url, params = params)
     results =  json.loads(res.content)
     places.extend(results['results'])
     return places
-
 
 ## get location from places
 def getLocation(result):
@@ -92,8 +93,30 @@ def closest_airport(office,df):
 def closest_starbucks(office):
     coords_off = (office.get('latitude'),office.get('longitude'))
     coords_off2 = ("{},{}".format(coords_off[0],coords_off[1]))
-    starbucks=pd.DataFrame(getLocation(nearbysearchName("starbucks",coords_off2,1000))).iloc[0]
-    coords_str=(starbucks.get('latitude'),starbucks.get('longitude'))
+    nbs_list=nearbysearchName("starbucks",coords_off2,500)
     dist = []
-    dist.append(geopy.distance.geodesic(coords_off, coords_str).m)
-    return dist
+    a=0
+    if nbs_list==[]:
+        return dist.append(a)
+    else:
+        starbucks=pd.DataFrame(getLocation(nbs_list)).iloc[0]
+        coords_str=(starbucks.get('latitude'),starbucks.get('longitude'))
+        geo_dist=(geopy.distance.geodesic(coords_off, coords_str).m)
+        dist.append(geo_dist)
+        return dist
+
+##Function to find closest vegan
+def closest_gtype(office,query,radius,gtype):
+    coords_off = (office.get('latitude'),office.get('longitude'))
+    coords_off2 = ("{},{}".format(coords_off[0],coords_off[1]))
+    nbs_list=nearbysearchText(query,coords_off2,radius,gtype)
+    dist = []
+    a=0
+    if nbs_list==[]:
+        return dist.append(a)
+    else:
+        df=pd.DataFrame(getLocation(nbs_list)).iloc[0]
+        coords_df=(df.get('latitude'),df.get('longitude'))
+        geo_dist=(geopy.distance.geodesic(coords_off, coords_df).m)
+        dist.append(geo_dist)
+        return dist
