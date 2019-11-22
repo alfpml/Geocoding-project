@@ -90,15 +90,13 @@ def main():
     folium.Marker(coords_vegan,radius=2,icon=folium.Icon(icon='cutlery',color='red'),popup='Vegan',).add_to(map_office)
     folium.Marker(coords_school,radius=2,icon=folium.Icon(icon='baby-formula',color='blue'),popup='School',).add_to(map_office)
 
-    map_office.save("./output/filename.png")
+    def embed_map(m, file_name):
+        from IPython.display import IFrame
+        m.save(file_name)
+        return IFrame(file_name, width='100%', height='500px')  
+        
+    embed_map(map_office,"./output/office_location.html")
 
-
-
-
-
-    print(offices.iloc[0])
-
-    map_office=folium.Map(location=[office1['latitude'],office1['longitude']],zoom_start=30)
     map_office
 
 if __name__ == "__main__":
