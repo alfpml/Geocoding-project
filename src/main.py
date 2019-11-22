@@ -61,7 +61,13 @@ def main():
     offices['rank'] = offices.apply (lambda row: fr.rank_airport(row), axis=1) + offices.apply (lambda row: fr.rank_starbucks(row), axis=1) + offices.apply (lambda row: fr.rank_vegan(row), axis=1) + offices.apply (lambda row: fr.rank_schools(row), axis=1)
     offices=offices.sort_values('rank',ascending=False)
     
+    ## 7. Printing most suitable location
     print(offices.iloc[0])
+
+    map_office=folium.Map(location=[37.4864,-122.23],zoom_start=30)
+
+
+map_office
 
 if __name__ == "__main__":
     main()
