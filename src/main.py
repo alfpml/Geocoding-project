@@ -62,12 +62,44 @@ def main():
     offices=offices.sort_values('rank',ascending=False)
     
     ## 7. Printing most suitable location
+        
+        ## Getting Closest Starbucks to draw it into the map
+    starbucks=fs.nearbysearchName("starbucks","{},{}".format(office1['latitude'],office1['longitude']),500)
+    closest_starbucks=pd.DataFrame(fs.getLocation(starbucks)).iloc[0]
+    coords_starbucks=(closest_starbucks.get('latitude'),closest_starbucks.get('longitude'))
+    print(coords_starbucks)
+
+
+        ## Getting Closest Vegan to draw it into the map
+    vegans=fs.nearbysearchType("vegan","{},{}".format(office1['latitude'],office1['longitude']),500,"restaurant")
+    closest_vegan=pd.DataFrame(fs.getLocation(vegans)).iloc[0]
+    coords_vegan=(closest_vegan.get('latitude'),closest_vegan.get('longitude'))
+    print(coords_vegan)
+
+        ## Getting Closest Waldorf School to draw it into the map
+    schools=fs.nearbysearchType("waldorf school","{},{}".format(office1['latitude'],office1['longitude']),500,"school")
+    closest_school=pd.DataFrame(fs.getLocation(schools)).iloc[0]
+    coords_school=(closest_school.get('latitude'),closest_school.get('longitude'))
+    print(coords_school)
+
+        ##printing map with markers for closest starbucks, vegan and school
+    map_office=folium.Map(location=[office1['latitude'],office1['longitude']],zoom_start=20)
+
+    folium.Marker([office1['latitude'],office1['longitude']],radius=2,icon=folium.Icon(icon='pushpin',color='black'),popup='Office',).add_to(map_office)
+    folium.Marker(coords_starbucks,radius=2,icon=folium.Icon(icon='cloud',color='green'),popup='Starbucks',).add_to(map_office)
+    folium.Marker(coords_vegan,radius=2,icon=folium.Icon(icon='cutlery',color='red'),popup='Vegan',).add_to(map_office)
+    folium.Marker(coords_school,radius=2,icon=folium.Icon(icon='baby-formula',color='blue'),popup='School',).add_to(map_office)
+
+    map_office.save("./output/filename.png")
+
+
+
+
+
     print(offices.iloc[0])
 
-    map_office=folium.Map(location=[37.4864,-122.23],zoom_start=30)
-
-
-map_office
+    map_office=folium.Map(location=[office1['latitude'],office1['longitude']],zoom_start=30)
+    map_office
 
 if __name__ == "__main__":
     main()

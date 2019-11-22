@@ -11,7 +11,7 @@ import geopy.distance
 from dotenv import load_dotenv
 load_dotenv()
 
-##Function to calculate distance between two points
+##Function to get coordinates
 def getLocCoord(office):
     longitude = office['longitude']
     latitude = office['latitude']
